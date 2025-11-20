@@ -21,11 +21,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build with Maven
-      run: mvn -B clean install
+    - name: Run Linter (Checkstyle)
+      run: mvn checkstyle:check
 
-    - name: Run tests
-      run: mvn test
+    - name: Build, Test and Coverage Check
+      run: mvn clean verify
 
-    - name: Run JaCoCo coverage
+    - name: Generate JaCoCo Report
       run: mvn jacoco:report

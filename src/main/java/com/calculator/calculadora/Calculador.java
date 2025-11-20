@@ -10,6 +10,8 @@ package com.calculator.calculadora;
  */
 public class Calculador {
     
+
+    
     public int sumar(int a, int b) {
         return a + b;
     }
@@ -24,7 +26,7 @@ public class Calculador {
 
     public double dividir(int a, int b) {
         if (b == 0) {
-            throw new IllegalArgumentException("No se puede dividir por cero no sea estu-");
+            throw new ArithmeticException("No se puede dividir por cero no sea estu-");
         }
         return (double) a / b;
     }

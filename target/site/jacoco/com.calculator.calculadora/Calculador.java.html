@@ -10,24 +10,26 @@ package com.calculator.calculadora;
  */
 <span class="fc" id="L11">public class Calculador {</span>
     
+
+    
     public int sumar(int a, int b) {
-<span class="fc" id="L14">        return a + b;</span>
+<span class="fc" id="L16">        return a + b;</span>
     }
 
     public int restar(int a, int b) {
-<span class="fc" id="L18">        return a - b;</span>
+<span class="fc" id="L20">        return a - b;</span>
     }
 
     public int multiplicar(int a, int b) {
-<span class="fc" id="L22">        return a * b;</span>
+<span class="fc" id="L24">        return a * b;</span>
     }
 
     public double dividir(int a, int b) {
-<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (b == 0) {</span>
-<span class="fc" id="L27">            throw new IllegalArgumentException(&quot;No se puede dividir por cero no sea estu-&quot;);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (b == 0) {</span>
+<span class="fc" id="L29">            throw new ArithmeticException(&quot;No se puede dividir por cero no sea estu-&quot;);</span>
         }
-<span class="fc" id="L29">        return (double) a / b;</span>
+<span class="fc" id="L31">        return (double) a / b;</span>
     }
 
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
