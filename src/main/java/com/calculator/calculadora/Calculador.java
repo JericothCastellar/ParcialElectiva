@@ -1,34 +1,53 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.calculator.calculadora;
 
 /**
- *
+ * Provee operaciones básicas de una calculadora.
+ * Incluye suma, resta, multiplicación y división.
  * @author leofa
  */
-public class Calculador {
-    
+public final class Calculador {
 
-    
-    public int sumar(int a, int b) {
+    /**
+     * Suma dos números enteros.
+     * @param a primer número
+     * @param b segundo número
+     * @return resultado de la suma
+     */
+    public int sumar(final int a, final int b) {
         return a + b;
     }
 
-    public int restar(int a, int b) {
+    /**
+     * Resta dos números enteros.
+     * @param a primer número
+     * @param b segundo número
+     * @return resultado de la resta
+     */
+    public int restar(final int a, final int b) {
         return a - b;
     }
 
-    public int multiplicar(int a, int b) {
+    /**
+     * Multiplica dos números enteros.
+     * @param a primer número
+     * @param b segundo número
+     * @return resultado de la multiplicación
+     */
+    public int multiplicar(final int a, final int b) {
         return a * b;
     }
 
-    public double dividir(int a, int b) {
+    /**
+     * Divide dos números enteros.
+     * @param a numerador
+     * @param b denominador
+     * @return resultado de la división
+     * @throws ArithmeticException si b es 0
+     */
+    public double dividir(final int a, final int b) {
         if (b == 0) {
-            throw new ArithmeticException("No se puede dividir por cero no sea estu-");
+            throw new ArithmeticException("No dividir por cero");
         }
         return (double) a / b;
     }
-
 }
