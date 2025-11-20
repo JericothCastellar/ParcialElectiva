@@ -31,4 +31,4 @@ EVIDENCIA
 
 AUTORIA Y ETICA
 Todo el código fue escrito a manualmente.
-Se investigaron métodos para detectar código generado por IA y se proponen políticas de uso responsable y la calidad.
+Se investigaron métodos para detectar código generado por IA y se proponen políticas de uso responsable y la calidad..
